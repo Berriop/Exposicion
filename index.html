@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Demo de Despliegue - Grupo 3</title>
+    <meta charset="UTF-8">
+    <title>Demo - Hosting, Dominio y Despliegue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-        .card { border: 2px solid #0070f3; padding: 20px; display: inline-block; border-radius: 10px; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 20px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #22d3ee;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #0f172a;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            color: #22d3ee;
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
+
+<header>
+    <h1>Aplicación Desplegada en Producción</h1>
+    <p>Demo práctica</p>
+</header>
+
+<section class="container">
     <div class="card">
-        <h1>¡Sitio en Vivo! 🚀</h1>
-        <p>Esta página está hosteada en Vercel.</p>
-        <p>Tema: Hosting, Dominio y Despliegue.</p>
+        <h2>Dominio</h2>
+        <p>Es la dirección que escribimos en el navegador.</p>
     </div>
+
+    <div class="card">
+        <h2>Hosting</h2>
+        <p>Servidor donde están almacenados los archivos HTML, CSS y JS.</p>
+    </div>
+
+    <div class="card">
+        <h2>Despliegue</h2>
+        <p>Proceso de subir el código desde local hasta producción.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Sitio publicado en Internet 24/7</p>
+</footer>
+
 </body>
 </html>
